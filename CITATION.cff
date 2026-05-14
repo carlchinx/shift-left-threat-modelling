@@ -4,7 +4,7 @@ title: "Shift-Left Threat Modelling: PyTM + Semantic Compiler for Managed RAG Ar
 authors:
   - family-names: Phiri
     given-names: Charles C.
-    affiliation: "Independent Researcher / ICTAM Fellow"
+    affiliation: "Independent Researcher | ICTAM Fellow"
 year: 2026
 license: MIT
 repository-code: "https://github.com/carlchinx/shift-left-threat-modelling"
