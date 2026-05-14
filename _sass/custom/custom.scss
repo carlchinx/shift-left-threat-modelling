@@ -1,0 +1,46 @@
+// Custom CSS overrides for just-the-docs.
+// Goal: make the documentation site use 100% of the available screen real-estate.
+
+.side-bar {
+  width: 264px;
+}
+
+.main {
+  // Override the theme's max-width so content stretches edge-to-edge.
+  max-width: none !important;
+  margin-left: 264px; // align with sidebar width on md+
+}
+
+@media (max-width: 49.9rem) {
+  .main {
+    margin-left: 0;
+  }
+}
+
+.main-content-wrap {
+  max-width: none !important;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.main-content {
+  max-width: none !important;
+  width: 100%;
+}
+
+// Make tables use full available width
+.main-content table {
+  width: 100%;
+}
+
+// Allow images (architecture / DFD) to scale up to full content width
+.main-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Iframes (LinkedIn embeds) responsive cap at their native width
+.main-content iframe {
+  max-width: 100%;
+}
