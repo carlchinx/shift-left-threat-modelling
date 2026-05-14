@@ -1,0 +1,51 @@
+title: Shift-Left Threat Modelling
+description: >-
+  PyTM + Semantic Compiler for shift-left threat modelling of a
+  Gemini-style Managed RAG architecture.
+theme: jekyll-theme-cayman
+url: "https://carlchinx.github.io"
+baseurl: "/shift-left-threat-modelling"
+
+show_downloads: true
+
+# Pages to surface in navigation
+header_pages:
+  - index.md
+  - docs/COMPLIANCE.md
+
+# Keep Jekyll out of source/build/Python noise
+exclude:
+  - .venv/
+  - .vscode/
+  - __pycache__/
+  - "**/__pycache__/"
+  - "*.pyc"
+  - .pytest_cache/
+  - .mypy_cache/
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - pyproject.toml
+  - requirements.txt
+  - app.py
+  - gemini_threat_model.py
+  - src/
+  - out/
+  - .out/
+  - build/
+  - dist/
+  - "*.egg-info/"
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .github/
+
+# SEO / safety
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
