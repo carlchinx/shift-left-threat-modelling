@@ -18,10 +18,13 @@ Compile a TypeSpec-style architecture into a **STRIDE threat model** with a **ma
 
 ---
 
-[![Pages build](https://github.com/carlchinx/shift-left-threat-modelling/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/carlchinx/shift-left-threat-modelling/actions/workflows/jekyll-gh-pages.yml)
+[![Live site](https://img.shields.io/website?url=https%3A%2F%2Fcarlchinx.github.io%2Fshift-left-threat-modelling%2F&up_message=online&down_message=offline&label=GitHub%20Pages)](https://carlchinx.github.io/shift-left-threat-modelling/)
+[![Latest commit](https://img.shields.io/github/last-commit/carlchinx/shift-left-threat-modelling/main?label=last%20commit)](https://github.com/carlchinx/shift-left-threat-modelling/commits/main)
+[![Repo size](https://img.shields.io/github/repo-size/carlchinx/shift-left-threat-modelling)](https://github.com/carlchinx/shift-left-threat-modelling)
+[![Stars](https://img.shields.io/github/stars/carlchinx/shift-left-threat-modelling?style=flat)](https://github.com/carlchinx/shift-left-threat-modelling/stargazers)
+[![Issues](https://img.shields.io/github/issues/carlchinx/shift-left-threat-modelling)](https://github.com/carlchinx/shift-left-threat-modelling/issues)
+[![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](#quick-start)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](#quick-start)
-[![Last commit](https://img.shields.io/github/last-commit/carlchinx/shift-left-threat-modelling.svg)](https://github.com/carlchinx/shift-left-threat-modelling/commits/main)
 
 > **Author:** Dr. Charles C. Phiri, CITP, Senior IEEE Member, Fellow (ICTAM) · Independent Researcher / ICTAM Fellow
 > **License:** [MIT](LICENSE) © 2026 Charles C. Phiri
