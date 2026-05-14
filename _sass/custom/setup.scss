@@ -3,6 +3,6 @@
 // otherwise just-the-docs internal arithmetic ($content-width - $nav-width)
 // fails with "Incompatible units: '%' and 'px'." in github-pages sass.
 // The full-width behaviour is enforced by `max-width: none !important` in custom.scss.
-$content-width: 100rem;
+$content-width: 2400px;
 $nav-width: 264px;
 $nav-width-md: 264px;
