@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.out/
+out/
+.vscode/
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Python build/packaging
+*.egg-info/
+build/
+dist/
+*.egg
+
+# OS / editor
+.DS_Store
+Thumbs.db
