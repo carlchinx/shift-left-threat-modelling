@@ -11,6 +11,20 @@ A Python project that models a **Gemini-style Managed RAG** architecture using *
 1. **PyTM** — Traditional threat modeling with data flow diagrams.
 2. **Semantic Compiler** — Graph-based threat analysis from TypeSpec-style architecture definitions.
 
+> **Author:** Dr. Charles C. Phiri, CITP, Senior IEEE Member, Fellow (ICTAM)
+> **Affiliation:** Independent Researcher / ICTAM Fellow
+> **License:** [MIT](LICENSE) © 2026 Charles C. Phiri
+
+## Background & Article
+
+**Explainer (short):**
+
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7426027060369948672?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post — Explainer"></iframe>
+
+**Main article:**
+
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7423736867189198848?collapsed=1" height="636" width="504" frameborder="0" allowfullscreen="" title="Embedded post — Main article"></iframe>
+
 ## Documentation
 
 - [Project README](README.md)
@@ -55,3 +69,10 @@ pip install -r requirements.txt
 python -m threatmodeling.validate
 streamlit run app.py
 ```
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+Copyright © 2026 **Dr. Charles C. Phiri**, CITP, Senior IEEE Member, Fellow (ICTAM).
