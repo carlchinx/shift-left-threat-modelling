@@ -1,17 +1,40 @@
 // Custom CSS overrides for just-the-docs.
-// Goal: make the documentation site use 100% of the available screen real-estate.
+// Goal: make the documentation site use 100% of the available screen real-estate
+// (full viewport WIDTH *and* HEIGHT).
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+// just-the-docs root flex container
 .side-bar {
   width: 264px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
 }
 
 .main {
   // Override the theme's max-width so content stretches edge-to-edge.
   max-width: none !important;
   margin-left: 264px; // align with sidebar width on md+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 49.9rem) {
+  .side-bar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
   .main {
     margin-left: 0;
   }
@@ -22,11 +45,19 @@
   width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
+  flex: 1 0 auto; // grow to push footer to bottom
 }
 
 .main-content {
   max-width: none !important;
   width: 100%;
+  min-height: calc(100vh - 6rem); // leave room for header + footer
+}
+
+// Footer should stick to the bottom of the viewport when content is short
+.main-footer {
+  flex-shrink: 0;
+  margin-top: auto;
 }
 
 // Make tables use full available width
