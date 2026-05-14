@@ -75,3 +75,112 @@ body {
 .main-content iframe {
   max-width: 100%;
 }
+
+// ---------------------------------------------------------------------------
+// Layout primitives: hero band, feature grid, callout, two-column row
+// ---------------------------------------------------------------------------
+
+.hero-band {
+  background: linear-gradient(135deg, #0b1f3a 0%, #1d3b6e 60%, #2563eb 100%);
+  color: #fff;
+  padding: 3rem 2rem 2.5rem;
+  margin: -2rem -2rem 2rem; // bleed to the edges of .main-content-wrap padding
+  border-radius: 0 0 12px 12px;
+
+  h1 {
+    color: #fff;
+    border: none;
+    margin-top: 0;
+  }
+
+  p,
+  .hero-tag {
+    color: #e2ecff;
+  }
+
+  .btn {
+    margin-right: 0.5rem;
+  }
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1rem 0 1.5rem;
+
+  img {
+    margin: 0;
+  }
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.feature-card {
+  border: 1px solid #e1e4e8;
+  border-radius: 10px;
+  padding: 1.25rem 1.25rem 1rem;
+  background: #fafbfc;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+  }
+
+  h3 {
+    margin-top: 0;
+    font-size: 1.05rem;
+  }
+
+  .feature-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem 0 2rem;
+
+  figure {
+    margin: 0;
+    text-align: center;
+
+    img {
+      border: 1px solid #e1e4e8;
+      border-radius: 8px;
+    }
+
+    figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #57606a;
+    }
+  }
+}
+
+.callout {
+  border-left: 4px solid #2563eb;
+  background: #eff6ff;
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.5rem 0;
+}
+
+.author-card {
+  border-top: 1px solid #e1e4e8;
+  border-bottom: 1px solid #e1e4e8;
+  padding: 1rem 0;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  color: #57606a;
+}

@@ -6,17 +6,21 @@ description: PyTM + Semantic Compiler for a Gemini-style Managed RAG architectur
 permalink: /
 ---
 
+<div class="hero-band" markdown="1">
+
 # Shift-Left Threat Modelling
 {: .fs-9 }
 
-Compile a TypeSpec-style architecture into a **STRIDE threat model** with a **mathematically-verified compliance report** — produced deterministically from source.
-{: .fs-5 .fw-300 }
+Compile a TypeSpec-style architecture into a **STRIDE threat model** with a **mathematically-verified compliance report** — produced deterministically from source, ready for executive, audit, and regulatory review.
+{: .fs-5 .fw-300 .hero-tag }
 
-[Get started](#quick-start){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Latest report (HTML)](out/report.html){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View on GitHub](https://github.com/carlchinx/shift-left-threat-modelling){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Get started](#quick-start){: .btn .btn-primary .fs-5 }
+[Latest report (HTML)](out/report.html){: .btn .fs-5 }
+[View on GitHub](https://github.com/carlchinx/shift-left-threat-modelling){: .btn .fs-5 }
 
----
+</div>
+
+<div class="badge-row" markdown="1">
 
 [![Live site](https://img.shields.io/website?url=https%3A%2F%2Fcarlchinx.github.io%2Fshift-left-threat-modelling%2F&up_message=online&down_message=offline&label=GitHub%20Pages)](https://carlchinx.github.io/shift-left-threat-modelling/)
 [![Latest commit](https://img.shields.io/github/last-commit/carlchinx/shift-left-threat-modelling/main?label=last%20commit)](https://github.com/carlchinx/shift-left-threat-modelling/commits/main)
@@ -26,28 +30,61 @@ Compile a TypeSpec-style architecture into a **STRIDE threat model** with a **ma
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](#quick-start)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> **Author:** Dr. Charles C. Phiri, CITP, Senior IEEE Member, Fellow (ICTAM) · Independent Researcher / ICTAM Fellow
-> **License:** [MIT](LICENSE) © 2026 Charles C. Phiri
+</div>
 
----
+<div class="author-card" markdown="1">
+
+**Author** &nbsp;·&nbsp; Dr. Charles C. Phiri, CITP, Senior IEEE Member, Fellow (ICTAM) &nbsp;·&nbsp; Independent Researcher | ICTAM Fellow
+**License** &nbsp;·&nbsp; [MIT](LICENSE) © 2026 Charles C. Phiri
+
+</div>
+
+## Why this exists
+
+<div class="feature-grid" markdown="1">
+
+<div class="feature-card" markdown="1">
+<div class="feature-icon">🧩</div>
+### TypeSpec → DFD → STRIDE
+A single architecture source compiles into a PyTM data-flow diagram **and** a graph-based STRIDE threat model — no manual transcription, no drift.
+</div>
+
+<div class="feature-card" markdown="1">
+<div class="feature-icon">🔬</div>
+### Mathematically verified
+The semantic compiler validates output against a formal compliance schema and emits a deterministic [verification.json](out/verification.json) for audit.
+</div>
+
+<div class="feature-card" markdown="1">
+<div class="feature-icon">📦</div>
+### Reproducible artefacts
+Every run regenerates the same architecture PNG, DFD PNG, Markdown + HTML reports, and JSON evidence — committed alongside the source.
+</div>
+
+</div>
 
 ## Architecture at a glance
 
-![Architecture](out/architecture.png)
+<div class="two-col" markdown="1">
 
-Two complementary modelling approaches operate over the same architectural source of truth:
+<figure markdown="1">
+![Semantic architecture](out/architecture.png)
+<figcaption>Semantic compiler: architecture graph from TypeSpec source.</figcaption>
+</figure>
 
-1. **PyTM** — Traditional threat modelling with data-flow diagrams.
-2. **Semantic Compiler** — Graph-based threat analysis from TypeSpec-style architecture definitions, verified against a formal compliance schema.
+<figure markdown="1">
+![PyTM data flow diagram](out/dfd.png)
+<figcaption>PyTM: STRIDE-aligned data flow diagram.</figcaption>
+</figure>
 
-![Data Flow Diagram](out/dfd.png)
+</div>
 
----
+<div class="callout" markdown="1">
+**Two complementary lenses on one model.** PyTM provides the traditional DFD/STRIDE view familiar to security engineers; the semantic compiler provides a graph-based, formally-verified view familiar to architects and auditors. Both consume the same `architecture_spec.tsp`.
+</div>
 
 ## Latest report
 {: .text-delta }
-
-The pipeline writes deterministic artifacts to `out/`. The current run is published with this site:
 
 | Artifact | Format |
 |---|---|
@@ -60,39 +97,51 @@ The pipeline writes deterministic artifacts to `out/`. The current run is publis
 | [Gemini DFD](out/gemini_dfd.png) | PNG |
 | [Gemini Sequence (PlantUML source)](out/gemini_sequence.puml) | PUML |
 
----
+## Background & article
 
-## Background & Article
+<div class="two-col" markdown="1">
 
-**Explainer (short):**
-
+<figure markdown="1">
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7426027060369948672?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post — Explainer"></iframe>
+<figcaption><strong>Explainer (short):</strong> <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7426027060369948672/">open on LinkedIn</a></figcaption>
+</figure>
 
-Direct link: [https://www.linkedin.com/feed/update/urn:li:ugcPost:7426027060369948672/](https://www.linkedin.com/feed/update/urn:li:ugcPost:7426027060369948672/)
-
-> Anonymous viewers may see a sign-in prompt — LinkedIn requires an account to render embedded posts.
-
-**Main article:**
-
+<figure markdown="1">
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7423736867189198848?collapsed=1" height="636" width="504" frameborder="0" allowfullscreen="" title="Embedded post — Main article"></iframe>
+<figcaption><strong>Main article:</strong> <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7423736867189198848/">open on LinkedIn</a></figcaption>
+</figure>
 
-Direct link: [https://www.linkedin.com/feed/update/urn:li:ugcPost:7423736867189198848/](https://www.linkedin.com/feed/update/urn:li:ugcPost:7423736867189198848/)
+</div>
 
-> If the embed above is blocked or refused by your browser/network, use the direct link.
-
----
+<div class="callout" markdown="1">
+Anonymous viewers may see a sign-in prompt — LinkedIn requires an account to render embedded posts. Use the direct links above as a fallback.
+</div>
 
 ## Documentation
 
-- [Project README](README.md)
-- [Notebooks](notebooks/) — [Gemini File Search PyTM Threat Model](notebooks/gemini_filesearch_pytm_threat_model.ipynb)
-- [Compliance & Validation](docs/COMPLIANCE.md)
-- [Project Summary](PROJECT_SUMMARY.md)
-- [Setup Guide](SETUP.md)
-- [LLM Configuration](LLM_CONFIG.md)
-- [Standalone Visualization](STANDALONE_VISUALIZATION.md)
+<div class="feature-grid" markdown="1">
 
----
+<div class="feature-card" markdown="1">
+### Project basics
+- [README](README.md)
+- [Setup guide](SETUP.md)
+- [Project summary](PROJECT_SUMMARY.md)
+</div>
+
+<div class="feature-card" markdown="1">
+### Methodology
+- [Compliance & validation](docs/COMPLIANCE.md)
+- [LLM configuration](LLM_CONFIG.md)
+- [Standalone visualization](STANDALONE_VISUALIZATION.md)
+</div>
+
+<div class="feature-card" markdown="1">
+### Notebooks
+- [Notebook index](notebooks/)
+- [Gemini File Search PyTM threat model](notebooks/gemini_filesearch_pytm_threat_model.ipynb)
+</div>
+
+</div>
 
 ## Quick Start
 
@@ -105,11 +154,12 @@ pip install -r requirements.txt
 # 1. Validate compliance between TypeSpec and PyTM specs
 python -m threatmodeling.validate
 
-# 2. Launch the interactive dashboard
+# 2. Run the full pipeline (regenerates everything in out/)
+python -m threatmodeling
+
+# 3. Or launch the interactive dashboard
 streamlit run app.py
 ```
-
----
 
 ## Cite this work
 
@@ -122,8 +172,6 @@ streamlit run app.py
   license = {MIT}
 }
 ```
-
----
 
 ## License
 
