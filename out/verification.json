@@ -1,33 +1,33 @@
-﻿{
-    "typespec_sha256": "f4aea33bfd20fab6322333c8104199abc257057f984e0f7dd294a988b5a41bf6",
-    "compliance_ok": true,
-    "graph": {
-        "nodes": 5,
-        "edges": 7,
-        "allowed_trust_zones": [
-            "DMZ",
-            "HighSide",
-            "Internet",
-            "Trusted"
-        ],
-        "allowed_flow_types": [
-            "ContextInjection",
-            "Control",
-            "Inference",
-            "Ingestion",
-            "Retrieval"
-        ]
-    },
-    "llm_findings": {
-        "count": 0,
-        "allowed_severities": [
-            "Critical",
-            "High",
-            "Low",
-            "Medium"
-        ],
-        "constraint": "Each finding must reference an existing component; fields must be non-empty; severity must be in allowed set."
-    },
-    "architecture_png_sha256": "f32358118c47f0995d20c5f6f98f4aa8875781fbf5382fe642401fa8ec051283",
-    "dfd_png_sha256": "d0555936bcb686b870cef1b1237ecac953440057fd47ccdffdc3a2d6fbf4764a"
+{
+  "typespec_sha256": "f4aea33bfd20fab6322333c8104199abc257057f984e0f7dd294a988b5a41bf6",
+  "compliance_ok": true,
+  "graph": {
+    "nodes": 5,
+    "edges": 7,
+    "allowed_trust_zones": [
+      "DMZ",
+      "HighSide",
+      "Internet",
+      "Trusted"
+    ],
+    "allowed_flow_types": [
+      "ContextInjection",
+      "Control",
+      "Inference",
+      "Ingestion",
+      "Retrieval"
+    ]
+  },
+  "llm_findings": {
+    "count": 0,
+    "allowed_severities": [
+      "Critical",
+      "High",
+      "Low",
+      "Medium"
+    ],
+    "constraint": "Each finding must reference an existing component; fields must be non-empty; severity must be in allowed set."
+  },
+  "architecture_png_sha256": "bf86804fda5e6c75ca6834e38e3e0c4cc482f39aed197e29a4b0aed6f827bf67",
+  "dfd_png_sha256": "aeced7b0c0ee7383d24d3089d9889cfc6c049142cc1694a44f16a15560704937"
 }

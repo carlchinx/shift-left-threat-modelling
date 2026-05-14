@@ -1,6 +1,6 @@
 # Threat Modeling Report
 
-Generated: 2026-02-01 13:07:16Z
+Generated: 2026-05-14 11:40:32Z
 ## Inputs
 - Source: Architecture TypeSpec text
 - LLM: HuggingFace Router (OpenAI-compatible), model `openai/gpt-oss-20b:groq`
@@ -91,7 +91,7 @@ Total findings: **10**
     Knowledge Graph: 7 threat patterns loaded
 
 [*] LLM ANALYZER: Querying gpt-oss for AI-assisted threat detection...
-LLM analysis failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': ''}}
+LLM analysis failed: Error code: 401 - {'error': 'Invalid username or password.'}
     -> LLM identified 0 additional threats
 
 ============================================================
