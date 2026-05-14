@@ -65,13 +65,17 @@ The pipeline writes deterministic artifacts to `out/`. The current run is publis
 
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7426027060369948672?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post — Explainer"></iframe>
 
-> Anonymous viewers may see a sign-in prompt — LinkedIn requires an account to render embedded posts. Open the [explainer post directly](https://www.linkedin.com/feed/update/urn:li:ugcPost:7426027060369948672/).
+Direct link: [https://www.linkedin.com/feed/update/urn:li:ugcPost:7426027060369948672/](https://www.linkedin.com/feed/update/urn:li:ugcPost:7426027060369948672/)
+
+> Anonymous viewers may see a sign-in prompt — LinkedIn requires an account to render embedded posts.
 
 **Main article:**
 
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7423736867189198848?collapsed=1" height="636" width="504" frameborder="0" allowfullscreen="" title="Embedded post — Main article"></iframe>
 
-> Open the [main article directly](https://www.linkedin.com/feed/update/urn:li:ugcPost:7423736867189198848/).
+Direct link: [https://www.linkedin.com/feed/update/urn:li:ugcPost:7423736867189198848/](https://www.linkedin.com/feed/update/urn:li:ugcPost:7423736867189198848/)
+
+> If the embed above is blocked or refused by your browser/network, use the direct link.
 
 ---
 
