@@ -97,6 +97,12 @@ This creates:
 
 All visualizations are generated using matplotlib - **no graphviz binary required**.
 
+## Notebooks
+
+See [`notebooks/`](notebooks/) for Jupyter notebooks that complement the pipeline:
+
+- [`notebooks/gemini_filesearch_pytm_threat_model.ipynb`](notebooks/gemini_filesearch_pytm_threat_model.ipynb) — PyTM threat model for the Gemini File Search (managed RAG) API. Cross-platform; produces `out/gemini_dfd.png`, `out/gemini_sequence.puml`, and `out/gemini_threat_report.md`.
+
 ## Architecture Compliance
 
 This project maintains **strict specification compliance** between two representations:

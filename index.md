@@ -82,6 +82,7 @@ Direct link: [https://www.linkedin.com/feed/update/urn:li:ugcPost:74237368671891
 ## Documentation
 
 - [Project README](README.md)
+- [Notebooks](notebooks/) — [Gemini File Search PyTM Threat Model](notebooks/gemini_filesearch_pytm_threat_model.ipynb)
 - [Compliance & Validation](docs/COMPLIANCE.md)
 - [Project Summary](PROJECT_SUMMARY.md)
 - [Setup Guide](SETUP.md)
