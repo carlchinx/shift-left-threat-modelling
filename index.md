@@ -22,7 +22,6 @@ Compile a TypeSpec-style architecture into a **STRIDE threat model** with a **ma
 
 <div class="badge-row" markdown="1">
 
-[![Live site](https://img.shields.io/website?url=https%3A%2F%2Fcarlchinx.github.io%2Fshift-left-threat-modelling%2F&up_message=online&down_message=offline&label=GitHub%20Pages)](https://carlchinx.github.io/shift-left-threat-modelling/)
 [![Status](https://img.shields.io/badge/status-active-success.svg)](#)
 [![Reproducible](https://img.shields.io/badge/build-reproducible-blueviolet.svg)](#quick-start)
 [![PyTM](https://img.shields.io/badge/PyTM-STRIDE-informational.svg)](https://github.com/izar/pytm)
