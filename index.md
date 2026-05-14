@@ -20,6 +20,26 @@ A Python project that models a **Gemini-style Managed RAG** architecture using *
 - [LLM Configuration](LLM_CONFIG.md)
 - [Standalone Visualization](STANDALONE_VISUALIZATION.md)
 
+## Generated Artifacts (`out/`)
+
+Latest pipeline outputs published with this site:
+
+### Reports
+- [Threat Modeling Report (Markdown)](out/report.md)
+- [Threat Modeling Report (HTML)](out/report.html)
+- [Gemini Threat Report](out/gemini_threat_report.md)
+- [Verification Results (JSON)](out/verification.json)
+
+### Diagrams
+- [Architecture diagram](out/architecture.png)
+- [Data Flow Diagram (PyTM)](out/dfd.png)
+- [Gemini DFD](out/gemini_dfd.png)
+- [Gemini Sequence (PlantUML source)](out/gemini_sequence.puml)
+
+![Architecture](out/architecture.png)
+
+![Data Flow Diagram](out/dfd.png)
+
 ## Source
 
 The implementation lives in the GitHub repository:

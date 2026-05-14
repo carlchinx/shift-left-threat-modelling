@@ -30,7 +30,6 @@ exclude:
   - app.py
   - gemini_threat_model.py
   - src/
-  - out/
   - .out/
   - build/
   - dist/

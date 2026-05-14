@@ -1,0 +1,27 @@
+@startuml
+actor actor_DeveloperAPIClient_f2eb7a3ff7 as "Developer / API Client"
+entity server_GeminiSDKRESTClient_d2006ce1bb as "Gemini SDK / REST Client"
+entity server_GeminiAPIGateway_f8af758679 as "Gemini API Gateway"
+entity server_AuthBillingService_2c440ebe53 as "Auth & Billing Service"
+database datastore_UserFileStore_0291419f72 as "User File Store"
+entity lambda_EmbeddingService_c76a0a7067 as "Embedding Service"
+database datastore_VectorStore_c6f87088c2 as "Vector Store"
+entity lambda_ContextInjectionEngine_9345ab4c19 as "Context Injection Engine"
+entity server_GeminiLLM_86e4604564 as "Gemini LLM"
+
+actor_DeveloperAPIClient_f2eb7a3ff7 -> server_GeminiSDKRESTClient_d2006ce1bb: API key/token
+server_GeminiSDKRESTClient_d2006ce1bb -> server_AuthBillingService_2c440ebe53: Token validation
+actor_DeveloperAPIClient_f2eb7a3ff7 -> server_GeminiSDKRESTClient_d2006ce1bb: File upload
+server_GeminiSDKRESTClient_d2006ce1bb -> server_GeminiAPIGateway_f8af758679: File to API
+server_GeminiAPIGateway_f8af758679 -> datastore_UserFileStore_0291419f72: Store file
+datastore_UserFileStore_0291419f72 -> lambda_EmbeddingService_c76a0a7067: Trigger embedding
+lambda_EmbeddingService_c76a0a7067 -> datastore_VectorStore_c6f87088c2: Store vectors
+actor_DeveloperAPIClient_f2eb7a3ff7 -> server_GeminiSDKRESTClient_d2006ce1bb: User prompt
+server_GeminiSDKRESTClient_d2006ce1bb -> server_GeminiAPIGateway_f8af758679: Prompt to API
+server_GeminiAPIGateway_f8af758679 -> lambda_ContextInjectionEngine_9345ab4c19: Query vectors
+datastore_VectorStore_c6f87088c2 -> lambda_ContextInjectionEngine_9345ab4c19: Relevant chunks
+lambda_ContextInjectionEngine_9345ab4c19 -> server_GeminiLLM_86e4604564: Context + prompt
+server_GeminiLLM_86e4604564 -> server_GeminiAPIGateway_f8af758679: LLM response
+server_GeminiAPIGateway_f8af758679 -> server_GeminiSDKRESTClient_d2006ce1bb: API response
+server_GeminiSDKRESTClient_d2006ce1bb -> actor_DeveloperAPIClient_f2eb7a3ff7: Display response
+@enduml
