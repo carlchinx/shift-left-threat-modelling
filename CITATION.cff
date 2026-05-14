@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Shift-Left Threat Modelling: PyTM + Semantic Compiler for Managed RAG Architectures"
+authors:
+  - family-names: Phiri
+    given-names: Charles C.
+    affiliation: "Independent Researcher / ICTAM Fellow"
+year: 2026
+license: MIT
+repository-code: "https://github.com/carlchinx/shift-left-threat-modelling"
+url: "https://carlchinx.github.io/shift-left-threat-modelling/"
+keywords:
+  - threat-modeling
+  - STRIDE
+  - PyTM
+  - semantic-compiler
+  - managed-RAG
+  - shift-left-security
